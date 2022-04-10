@@ -1,0 +1,376 @@
+/* font awesome */
+@font-face {
+  font-family: "fa-brands-400";
+  src: url(./fontawesome/webfonts/fa-brands-400.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "fa-solid-900";
+  src: url(./fontawesome/webfonts/fa-solid-900.ttf) format("truetype");
+}
+
+/* шрифты */
+@font-face {
+  font-family: "Roboto-R";
+  src: url(./fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-M";
+  src: url(./fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-I";
+  src: url(./fonts/Roboto-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Philosopher-R";
+  src: url(./fonts/Philosopher-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Philosopher-B";
+  src: url(./fonts/Philosopher-Bold.ttf) format("truetype");
+}
+
+/* Основные */
+html {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-R";
+  font-size: 1.8rem;
+  line-height: 2.0rem;
+}
+
+header, section {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+header {
+  background: #eeeeed url(./images/bg-header.png) repeat-x;
+}
+
+section {
+  padding: 10.0rem;
+}
+
+section:nth-child(even) {
+  background: #eeeeed;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.fontawesome {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  font-family: 'fa-brands-400', 'fa-solid-900';
+  list-style: none;
+}
+
+h1 {
+  margin: 10.0rem 0;
+  font-family: "Philosopher-R";
+  font-size: 5.0rem;
+  line-height: 7.2rem;
+  text-align: right;
+}
+
+h1+span {
+  margin-bottom: 6.0rem;
+  font-family: "Roboto-M";
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 6.0rem;
+  font-family: "Philosopher-B";
+  font-size: 6.0rem;
+  line-height: 6.0rem;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 3.0rem;
+  font-family: "Philosopher-R";
+  font-size: 3.0rem;
+  line-height: 3.0rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 3.0rem;
+  font-size: 2.4rem;
+  line-height: 3.0rem;
+}
+
+button {
+  width: 32.0rem;
+  height: 6.5rem;
+  border-radius: 3.0rem;
+  color: #eeeeed;
+  background: #005c7b;
+  font-family: "Roboto-R";
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #eb447b;
+}
+
+/* Специфичные header */
+header {
+  overflow: hidden;
+}
+
+header .area-11 {
+  min-height: 10.0rem;
+  display: flex;
+  align-items: center;
+  color: #d4d0c8;
+}
+
+header .area-11 a:hover,
+header .area-11 li:hover {
+  color: #eeeeed;
+}
+
+header .area-12 {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #005c7b;
+}
+
+header .area-12 img {
+  position: absolute;
+  top: 25.0rem;
+  left: 0;
+  max-width: 80.0rem;
+}
+
+header .area-12 ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 2.0rem;
+}
+
+header .area-12 li {
+  margin-left: 3.0rem;
+  color: #06bac5;
+  text-transform: uppercase;
+}
+
+header .area-12 li:hover {
+  color: #eb447b;
+}
+
+/* Специфичные main */
+main .area-11 {
+  margin-bottom: 3.0rem;
+}
+
+main .area-11 p {
+  text-align: center;
+}
+
+main .area-12 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .area-12 img {
+  margin-bottom: 2.0rem;
+}
+
+main .area-12 li {
+  list-style: none;
+  text-align: center;
+  line-height: 3.0rem;
+}
+
+main .area-21 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .area-21 ul {
+  list-style: none;
+}
+
+main .area-21 li {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3.0rem;
+  font-size: 3.0rem;
+  line-height: 4.8rem;
+}
+
+main .area-21 li img {
+  margin-right: 3.0rem;
+  max-width: 3.0rem;
+}
+
+main .area-31 {
+  margin-bottom: 4.0rem;
+}
+
+main .area-31>div {
+  position: relative;
+  margin: 0 0 4.0rem 0;
+}
+
+main .area-31>div img {
+  position: absolute;
+}
+
+main .area-31>div a {
+  margin-left: 2.5rem;
+}
+
+main .area-32 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .area-32 a {
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+
+main .area-32 a:hover {
+  color: #eb447b;
+}
+
+main .area-41 p {
+  font-size: 1.5rem;
+  line-height: 3.0rem;
+}
+
+main .area-52 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15.0rem;
+}
+
+main .area-52 img {
+  margin: 0 2.0rem;
+}
+
+main .area-53 {
+  margin: 0 auto;
+  max-width: 55.0rem;
+}
+
+main .area-53 li {
+  color: #005c7d;
+}
+
+main .area-53 li:hover {
+  color: #eb447b;
+}
+
+footer {
+  padding: 2.0rem 0;
+  color: aliceblue;
+  background: #005c7b;
+}
+
+footer p {
+  font-size: 1.8rem;
+  line-height: 2.0rem;
+  margin: 0 0 1.0rem 0;
+}
+
+footer a {
+  font-size: 1.2rem;
+  line-height: 3.0rem;
+}
+
+/* Media-запросы */
+@media (max-width: 1199px) {
+  header .area-12 img {
+    top: 35.0rem;
+    left: 0;
+    max-width: 60.0rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header .area-12 img {
+    top: 50.0rem;
+    left: 0;
+    max-width: 40.0rem;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  header .area-11:nth-child(1) {
+    min-height: 12.0rem;
+    justify-content: center;
+  }
+
+  header .area-11:nth-child(2) {
+    display: none;
+  }
+
+  header .area-12 img {
+    display: none;
+  }
+
+  main .area-12 {
+    margin-bottom: 3.0rem;
+  }
+}
+@media (max-width: 575px) {
+  main .area-52 span,
+  main .area-52 img {
+    display: none;
+  }
+}
